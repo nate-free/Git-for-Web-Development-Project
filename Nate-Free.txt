@@ -1,0 +1,87 @@
+    https://codepen.io/natedfree/pen/NWbdQdm?editors=1100
+    
+    1. What is Semantic HTML? 
+    Elements in html that give meaning to how the page/content is set up.  
+    2. What is HTML used for? 
+    html is the framework, what basic content will appear on your page with little style/display
+    3. What is an attribute and where do we put it? 
+    attributes baiscally give additional meaning/classification to elements. it goes in opening tag of an element
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    The h1 tag is used to define the most impotant title/heading on the page. it should be used once on a page
+    5. Name two tags that have required attributes
+    <img> and <a> tags require attributes like src and href respectively
+    6. What do we put in the head of our HTML document? 
+    typically we put our h1 heading and maybe a small about/nav section
+    7. What is an id? 
+    an id is a way to define/locate a certain element later. it can ongitly apply to one single element
+    8. What elements can I add an id to? 
+    any element
+    9. How many times can I use the same id on a page? 
+    once, id's must be unique
+    10. What is a class? 
+    Class is another attribute that allows you to classify/define elements however it can be applied to multiple elements
+    11. What elements can I add a class to? 
+    any element
+    12. How many times can I use the same class on a page? 
+    as many times as makes sense for your project
+    13. How do I get my link to open in a new tab?
+    you have to use a tags with href attribute and add target attribute _blank
+    14. What is the alt attribute in the image tag used for? 
+    this is what is read if there is an issue with image or for visually impaired web users
+    15. How do I reference an id?
+    with a #
+    16. What is the difference between a section and a div
+    section is semantic and div isn't. basically section tags tell you the content within is grouped/part of a similar theme. div is simply a container that specifies a division in your content 
+    17. What is CSS used for? 
+    css is used for styling your html content. it let's you decide how the content is displayed to whoever is visiting the page
+    18. How to we select an element? Example - every h2 on the page
+    by simply typing h2 followed by {} 
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    id can only refer to one element whereas a class can be assigned to multiple elements. so if you wanted to apply css to multiple elements you'd give all of those elements the same class. id would be used to point to a style in a style sheet
+    20. How do we select classes in CSS?
+    with a . For example:.class-name
+    21. How do we select a p element with a single class of “human””?
+    .human p{}
+    22. What is a parent child selector? When would this be useful? 
+    parent child selector allows you to style certain elements that pertain to a specific parent. useful when you want to style multiple <p> elements for example but not all you can make sure the ones you want to style are under the same parent
+    23. How do you select all links within a div with the class of sidebar?
+    .sidebar a:link{}
+    24. What is a pseudo selector?
+    used to define/select an element in a specific state ie :hover so changes only apply when the element is hovered over
+    25. What do we use the change the spacing between lines?
+    line-height property
+    26. What do we use to change the spacing between letters?
+    letter-spacing property
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform property
+    28. How do I add a 1px border around my div that is dotted and black?
+    div{
+    border: 1px dotted black;}
+    29. How do I select everything on the page?
+    use the * selector
+    30. How do I write a comment in CSS?
+    /* comment goes here */
+    31. How do I find out what file I am in, when I am using the command line? 
+    use the pwd command
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    use command ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+    rm command. have to be careful because it will delete them permanently, there is no "back up" it removes them entirely 
+    34. Why should I use version control? 
+    track progress and have back up in case something happens and you lose what you are currently working on in your code/project
+    35. How often should I commit to github?
+    as often as possible
+    36. What is the command we would use to push our repo up to github? 
+    git push
+    37. Walk me through Lambda's git flow. 
+    fork online repo > clone > branch > add > commit > push > merge > pull
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    with a block element, there will always be a new line after the closing tag whereas with an inline element there will never be a new line, the element will appear side by side
+    2. What happens when an element is positioned absolutely? 
+    when an element is positioned absolutely it's position is fixed and then top, right, bottom, left properties specify how far offset it is from the edges of it's containing block which is the ancestor relative to which that element is postitioned. if the parent element is not positioned it will go to the nearest ancestor that is poistioned or ultimately the body if no other ancestors are postitioned.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
